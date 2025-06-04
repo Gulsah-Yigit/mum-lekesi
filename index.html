@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mumlekesi - Basit Sayfa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Mumlekesi.com</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="#anasayfa">Anasayfa</a></li>
+        <li><a href="#mum-lekesi">Mum Lekesi</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-wrapper">
+      <aside class="sidebar">
+        <h3>Kategoriler</h3>
+        <ul>
+          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#mum-lekesi">Mum Lekesi</a></li>
+          <li><a href="#mum-lekesi-nasil-cikar">Nasıl Çıkar?</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </aside>
+
+      <main class="content">
+        <section class="container" id="anasayfa">
+          <h1>Mum Lekesi</h1>
+          <p>
+            Mum; katı yakıt bloğuna ve içinde gömülü bir fitile sahip bir ışık
+            ve bazen de bir ısı kaynağıdır. 19. yüzyıl ortalarından önce,
+            mumların çoğu don yağından yapılırdı (Don Yağı: Normal sıcaklıkta
+            katı olan ve içyağları eritilerek meydane getirilen hayvansal yağ.).
+            Günümüzde genellikle parafin mumu kullanılır; jel, soya ve
+            balmumundan yapılan mumlar da vardır. Balmumu doğal bir malzemedir
+            ve hammaddesi arı kovanlarıdır. Parafin ise; katran, petrol vb.
+            maddelerden elde edilen, katı, beyaz, belli oranda saydam, çıkartmış
+            olduğu buhar, parlak bir alevle yanan katı hidrokarbon bir
+            malzemedir.
+          </p>
+
+          <p>
+            Elektriğin ortaya çıkmasından önce, aydınlanma için mumlar ve yağ
+            lambaları kullanılırdı. 20. yüzyıla kadar genellikle Kuzey Avrupa’da
+            mum, Güney Avrupa ve Akdeniz’de ise yaygın olarak yağ lambası
+            kullanılıyordu. Günümüzde mumlar genellikle estetik görünümleri ve
+            kokuları nedeniyle doğum günü pastalarında ve özellikle yumuşak,
+            sıcak veya romantik bir ortam yaratmak veya ortama biraz daha şenlik
+            havası kazandırmak için kullanılır. Mumlar elektrik kesilmelerinde
+            acil aydınlatma için de kullanılmaktadır.
+          </p>
+        </section>
+
+        <section class="container" id="mum-lekesi">
+          <h2>Mum Lekesi Nasıl Çıkar?</h2>
+          <p>
+            Mum lekesiyle ilgili aşağıdaki yöntemler kullanılarak doğru
+            müdaheleler yapılırsa mum lekesi; kumaştan, giysiden, halıdan büyük
+            oranda çıkarılabilir. Mum lekesi çıkarmak için kullanılan ve
+            başarılı olabilen bazı yöntemler⬇️
+          </p>
+        </section>
+
+        <section class="container" id="mum-lekesi-nasil-cikar">
+          <h3>
+            Mum lekesi çıkarmak için kullanılan ve başarılı olabilen bazı
+            yöntemler:
+          </h3>
+          <div class="clickable-titles">
+            <div
+              class="title-item"
+              onclick="window.open('https://example.com/mum-lekesi-nasil-cikar', '_blank')"
+            >
+              <span class="icon">🔥</span>
+              <h3>Mum Lekesi Nasıl Çıkar?</h3>
+            </div>
+            <div
+              class="title-item"
+              onclick="window.open('https://example.com/giysideki-mum-lekesi', '_blank')"
+            >
+              <span class="icon">👕</span>
+              <h3>Giysideki Mum Lekesi Nasıl Çıkar?</h3>
+            </div>
+            <div
+              class="title-item"
+              onclick="window.open('https://example.com/halidaki-mum-lekesi', '_blank')"
+            >
+              <span class="icon">🧼</span>
+              <h3>Halıdaki Mum Lekesi Nasıl Çıkar?</h3>
+            </div>
+            <div
+              class="title-item"
+              onclick="window.open('https://example.com/halidaki-mum-lekesi', '_blank')"
+            >
+              <span class="icon">🪑</span>
+              <h3>Mobilyadaki Mum Lekesi Nasıl Çıkar?</h3>
+            </div>
+            <div
+              class="title-item"
+              onclick="window.open('https://example.com/halidaki-mum-lekesi', '_blank')"
+            >
+              <span class="icon">🍷</span>
+              <h3>Cam Kaplardaki Mum Lekesi Nasıl Çıkar?</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="container" id="iletisim">
+          <h2>İletişim</h2>
+          <p>
+            Bize
+            <a href="mailto:info@mumlekesi.com">info@mumlekesi.com</a>
+            adresinden ulaşabilirsiniz.
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Mobil menü aç/kapa
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

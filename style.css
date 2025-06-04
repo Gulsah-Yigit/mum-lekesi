@@ -10,6 +10,11 @@ body {
   padding: 0;
 }
 
+/* Sabit navbar nedeniyle anchor linklerin içeriğini kapatmasını engellemek için */
+section[id] {
+  scroll-margin-top: 90px;
+}
+
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -26,7 +31,7 @@ nav {
   top: 0;
   z-index: 1000;
 
-  background-color: #1e1e1e;
+  background-color: #333;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.3);
   padding: 1rem 3rem;
 }
@@ -87,6 +92,7 @@ nav ul li a:hover {
   height: fit-content;
   position: sticky;
   top: 80px; /* navbar altına yapışık */
+  order: 1; /* Sidebar'ı görsel olarak ilk sıraya getirir */
 }
 
 .sidebar h3 {
@@ -115,8 +121,14 @@ nav ul li a:hover {
 }
 
 /* İçerik container */
-.content {
+/* .content {
   flex: 1;
+  order: 2;
+} */
+
+.content {
+  order: 1; /* önce içerik gelsin */
+  width: 100%;
 }
 
 .container {
@@ -170,7 +182,6 @@ p {
   user-select: none;
 }
 
-/* Responsive: 768px altı için */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -182,18 +193,48 @@ p {
     width: 200px;
     border-radius: 0 0 0 8px;
   }
+
   nav ul.show {
     display: flex;
   }
+
   .menu-toggle {
     display: flex;
   }
-  /* Sidebar responsive gizle */
+
   .main-wrapper {
     flex-direction: column;
     margin: 1rem;
   }
+
   .sidebar {
-    display: none;
+    display: block;
+    order: 2;
+    width: 100%;
+    margin-top: 1rem;
   }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.logo-img {
+  height: 60px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: -5px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 20px;
 }
